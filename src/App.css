@@ -1,38 +1,107 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App{
+  padding: 3%;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+}
+
+.App-logo{
+  width: 7%;
+}
+
+.navLists ul{
+  margin-left: -68%;
+  margin-top: 30%
+}
+.navLists ul li{
+  list-style: none;
+  color: black;
+  display: inline;
+  margin: 15% 10% 5% 10%
+}
+
+.whatPage h2{
+  color: white;
+  text-align: center;
+  border: solid;
+  border-width: 6px;
+  width: 56%;
+  padding: 11%;
+  margin: 0 auto;
+}
+
+.titlePage{
+  background-image: url('../src/images/books.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  padding: 10%;
+}
+
+.titleSearch {
+  margin: 2%;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.books h3 img{
+  margin: 5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.booksComplete{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 2%;
+  margin: 3% auto;
+  transition: 1s;
+  width: 50%;
+}
+.booksComplete:hover{
+  transform: scale(1.1);
+  box-shadow: 1px 1px 7px #CFDFE6;
+
+}
+.booksComplete .description{
+  margin-left: 5%;
+  display: grid;
+}
+.booksComplete .description p{
+  margin-top: 2%;
 }
 
-.App-link {
-  color: #61dafb;
+.bookselected{
+  padding: 5%;
+  display: flex;
+  justify-content: space-around;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.bookselected img{
+  width: 17%;
+}
+
+/** MEDIA QUERY **/
+
+/* Mobile Styles */ 
+@media only screen and (max-width: 400px) {
+  .bookselected {
+    display: block;
+    margin: 10%;
   }
-  to {
-    transform: rotate(360deg);
+  .bookselected button{
+    margin-top: 7%;
   }
 }
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .bookselected {
+    display: block;
+    margin: 10%;
+  }
+}
+
